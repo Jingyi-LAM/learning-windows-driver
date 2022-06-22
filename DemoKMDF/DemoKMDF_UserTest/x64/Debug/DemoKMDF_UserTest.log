@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Code\Windows_Driver\DemoKMDF\DemoKMDF_UserTest\test.c(60,46): warning C4133: “return”: 从“WCHAR [1]”到“PCHAR”的类型不兼容
+D:\Code\Windows_Driver\DemoKMDF\DemoKMDF_UserTest\test.c(74,41): warning C4133: “函数”: 从“PCHAR”到“LPCWSTR”的类型不兼容
+  DemoKMDF_UserTest.vcxproj -> D:\Code\Windows_Driver\DemoKMDF\x64\Debug\DemoKMDF_UserTest.exe

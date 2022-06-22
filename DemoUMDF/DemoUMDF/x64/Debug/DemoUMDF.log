@@ -1,0 +1,27 @@
+﻿  Building 'DemoUMDF' with toolset 'WindowsUserModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\DemoUMDF.inf
+  Stamping [Version] section with DriverVer=06/18/2022,22.14.16.89
+  device.c
+  driver.c
+  queue.c
+  正在生成代码...
+    正在创建库 D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF.lib 和对象 D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF.exp
+  DemoUMDF.vcxproj -> D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF.dll
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF.dll
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF\demoumdf.cat
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\DemoUMDF\x64\Debug\DemoUMDF\demoumdf.cat
+  

@@ -1,0 +1,26 @@
+﻿  Building 'DemoKMDF' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\DemoKMDF.inf
+  Stamping [Version] section with DriverVer=06/18/2022,21.25.13.520
+  device.c
+  driver.c
+  queue.c
+  正在生成代码...
+  DemoKMDF.vcxproj -> D:\Code\Windows_Driver\DemoKMDF\x64\Debug\DemoKMDF.sys
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\DemoKMDF\x64\Debug\DemoKMDF.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  D:\Code\Windows_Driver\DemoKMDF\x64\Debug\DemoKMDF\demokmdf.cat
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\DemoKMDF\x64\Debug\DemoKMDF\demokmdf.cat
+  
