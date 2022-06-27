@@ -1,0 +1,26 @@
+﻿  Building 'Template' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\Template.inf
+  Stamping [Version] section with DriverVer=06/27/2022,21.39.18.992
+  device.c
+  driver.c
+  queue.c
+  正在生成代码...
+  Template.vcxproj -> D:\Code\Windows_Driver\Template\x64\Debug\Template.sys
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\Template\x64\Debug\Template.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  D:\Code\Windows_Driver\Template\x64\Debug\Template\template.cat
+  Done Adding Additional Store
+  Successfully signed: D:\Code\Windows_Driver\Template\x64\Debug\Template\template.cat
+  

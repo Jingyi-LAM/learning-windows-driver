@@ -1,0 +1,80 @@
+;
+; Template.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=Template.cat
+DriverVer = 06/27/2022,21.39.18.992
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+Template_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Template.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%Template.DeviceDesc%=Template_Device, Root\Template ; TODO: edit hw-id
+
+[Template_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Template.sys
+
+;-------------- Service installation
+[Template_Device.NT.Services]
+AddService = Template,%SPSVCINST_ASSOCSERVICE%, Template_Service_Inst
+
+; -------------- Template driver install sections
+[Template_Service_Inst]
+DisplayName    = %Template.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Template.sys
+
+;
+;--- Template_Device Coinstaller installation ------
+;
+
+[Template_Device.NT.CoInstallers]
+AddReg=Template_Device_CoInstaller_AddReg
+CopyFiles=Template_Device_CoInstaller_CopyFiles
+
+[Template_Device_CoInstaller_AddReg]
+;
+
+
+[Template_Device_CoInstaller_CopyFiles]
+;
+
+
+[Template_Device.NT.Wdf]
+KmdfService =  Template, Template_wdfsect
+[Template_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "Template Installation Disk"
+Template.DeviceDesc = "Template Device"
+Template.SVCDESC = "Template Service"

@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Code\Windows_Driver\Template\Test\test.c(66,46): warning C4133: “return”: 从“WCHAR [1]”到“PCHAR”的类型不兼容
+D:\Code\Windows_Driver\Template\Test\test.c(76,41): warning C4133: “函数”: 从“PCHAR”到“LPCWSTR”的类型不兼容
+  Test.vcxproj -> D:\Code\Windows_Driver\Template\x64\Debug\Test.exe
